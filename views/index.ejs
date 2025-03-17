@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <form action="/weather" method="GET">
+            <input type="text" name="city" placeholder="Enter city name" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        <% if (error) { %>
+            <div class="error"><%= error %></div>
+        <% } else if (weather) { %>
+            <div class="card">
+                <h2><%= weather.location.name %>, <%= weather.location.country %></h2>
+                <p>Temperature: <%= weather.current.temperature %>°C</p>
+                <p>Weather: <%= weather.current.weather_descriptions[0] %></p>
+                <p>Humidity: <%= weather.current.humidity %>%</p>
+                <p>Wind Speed: <%= weather.current.wind_speed %> km/h</p>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>

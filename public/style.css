@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://images.unsplash.com/photo-1741850820078-bd14aa710eef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D') no-repeat center center fixed; /* Nature background */
+    background-size: cover; /* Cover the entire background */
+    color: #333; /* Dark text color for better readability */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Larger font size */
+    color: #FF9900; /* Amazon-like orange color for the title */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #FF9900; /* Amazon-like orange border */
+    width: 70%; /* Full width */
+    margin-right: 10px; /* Space between input and button */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly more opaque white */
+    color: #333; /* Dark text color */
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #FF9900; /* Amazon-like orange background */
+    color: white; /* White text color */
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button[type="submit"]:hover {
+    background-color: #FFB84D; /* Lighter orange on hover */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for cards */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 2em; /* Larger font size for city name */
+    color: #FF9900; /* Amazon-like orange color */
+}
+
+.card p {
+    margin: 5px 0; /* Space between paragraphs */
+    font-size: 1.2em; /* Slightly larger font size */
+    color: #555; /* Darker gray for paragraph text */
+}
+
+.error {
+    color: #FF4444; /* Red color for error messages */
+    margin-top: 20px;
+    font-size: 1.2em; /* Slightly larger font size */
+}
